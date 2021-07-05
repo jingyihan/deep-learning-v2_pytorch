@@ -39,7 +39,6 @@ You look like a ...
 Top 1 breed: Cardigan_welsh_corgi, class probability: 0.02444
 Top 2 breed: Boxer, class probability: 0.02280
 Top 3 breed: Afghan_hound, class probability: 0.01836
-
 ```
 
 ```
@@ -51,8 +50,8 @@ Hello, dog!
 Top 1 breed: Doberman_pinscher, class probability: 0.98857
 Top 2 breed: German_pinscher, class probability: 0.00815
 Top 3 breed: Great_dane, class probability: 0.00163
-
 ```
+
 ### Proposal.pdf
 Project proposal outlined the scope and goals for the proposal. The document discussed the models will be implemented in the project and outlined the metrics to measure model performance and benchmarks used to assess model's adequacy.
 
