@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-This capstone project will investigate dog breed identification and build an algorithm to produce an estimation of a dog breed given a dog image or dog breed that best ensembles the provided human image. Given an image of a dog, the algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
+This capstone project will investigate dog breed identification and build an algorithm to produce an estimation of a dog breed given a dog image or dog breed that best ensembles the provided human image. Given an image of a dog, the algorithm will identify an estimate of the breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
 
 ![Sample Output][image1]
 
@@ -22,40 +22,40 @@ The file is cloned from the Udacity repository with commend shown below:
 		git clone https://github.com/udacity/deep-learning-v2-pytorch.git
 		cd deep-learning-v2-pytorch/project-dog-classification
 	```
-	
+The jupyter notebook contains exploratory data analysis, implementation of CNN model from scratch, and the final app algorithm using resnet101 model for dog breed classification. 
+
 	```
 		jupyter notebook dog_app.ipynb
 	```
+Sample outputs are shown below:
 
-__NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
+```
+Hello, human!
+```
+![image](https://user-images.githubusercontent.com/24922489/124483634-cc117c00-dd67-11eb-811a-cd4e9b98844c.png)
 
-__NOTE:__ In the notebook, you will need to train CNNs in PyTorch.  If your CNN is taking too long to train, feel free to pursue one of the options under the section __Accelerating the Training Process__ below.
+```
+You look like a ...
+Top 1 breed: Cardigan_welsh_corgi, class probability: 0.02444
+Top 2 breed: Boxer, class probability: 0.02280
+Top 3 breed: Afghan_hound, class probability: 0.01836
 
+```
+
+```
+Hello, dog!
+```
+![image](https://user-images.githubusercontent.com/24922489/124483701-dfbce280-dd67-11eb-898c-f97538d2cc6c.png)
+
+```
+Top 1 breed: Doberman_pinscher, class probability: 0.98857
+Top 2 breed: German_pinscher, class probability: 0.00815
+Top 3 breed: Great_dane, class probability: 0.00163
+
+```
 ### Proposal.pdf
+Project proposal outlined the scope and goals for the proposal. The document discussed the models will be implemented in the project and outlined the metrics to measure model performance and benchmarks used to assess model's adequacy.
 
 ### Project Report.pdf
+Project report documented the model development process in detail. It included the model testing results and detailed implementation steps of the models. Specifically, for the dog classification models (from scratch and transfer learning), model training output, i.e. training loss vs valiation loss, was analyzed; and the accuracy of each model was compared. In addition, F1 score for each breed was calculated and discussed. Lastly, the project report also discussed further improvements for this project.
 
-## (Optionally) Accelerating the Training Process 
-
-If your code is taking too long to run, you will need to either reduce the complexity of your chosen CNN architecture or switch to running your code on a GPU.  If you'd like to use a GPU, you can spin up an instance of your own:
-
-#### Amazon Web Services
-
-You can use Amazon Web Services to launch an EC2 GPU instance. (This costs money, but enrolled students should see a coupon code in their student `resources`.)
-
-## Evaluation
-
-Your project will be reviewed by a Udacity reviewer against the CNN project rubric.  Review this rubric thoroughly and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
-
-
-## Project Submission
-
-Your submission should consist of the github link to your repository.  Your repository should contain:
-- The `dog_app.ipynb` file with fully functional code, all code cells executed and displaying output, and all questions answered.
-- An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.
-
-Please do __NOT__ include any of the project data sets provided in the `dogImages/` or `lfw/` folders.
-
-### Ready to submit your project?
-
-Click on the "Submit Project" button in the classroom and follow the instructions to submit!
